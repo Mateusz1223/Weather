@@ -1,0 +1,163 @@
+/*
+night.jpg: Photo by Min An from Pexels
+clear_sky.jpg: Photo by Elia Clerici from Pexels
+clouds.jpg: Photo by Pixabay An from Pexels
+
+These are not the original image names
+
+https://www.pexels.com/
+*/
+
+html{
+    height: 100%;
+    font-family: 'Dosis', sans-serif;
+}
+
+body{
+	height: 100%;
+	width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    position: relative;
+    margin: 0px;
+}
+
+h1{
+	font-size: 65px;
+}
+
+input{
+	border: none;
+	border-left: 1px solid grey;
+	padding: 10px;
+	font-size: 25px;
+	width: 70%;
+}
+
+#Center{
+	width: 70%;
+	max-width: 450px;
+	margin: auto;
+
+ 	padding-bottom: 60px;
+ 	padding-left: 40px;
+ 	padding-right: 40px;
+ 	background: rgba(255, 255, 255, 0.3);
+ 	border-radius:7px;
+}
+
+#Search-div{
+	text-align: center;
+}
+
+#Searchbar{
+	text-align: left;
+	background-color: white;
+	border-radius: 6px;
+	margin: auto;
+	box-sizing: border-box;
+}
+
+#Weather-div{
+	width: 100%;
+	padding-top: 40px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: left;
+}
+
+#Weather-div h1{
+	display: inline;
+	margin-right: 15px;
+}
+
+#Weather-div small{
+	display: inline;
+	font-size: 18px;
+}
+
+#Weather-div img{
+	width: 50px;
+	height: 50px;
+}
+
+.weather-description{
+	font-size: 33px;
+	display: inline;
+}
+
+#Weather-div #Searchbar{
+	margin-top: 60px;
+}
+
+.alert{
+	color: rgb(153, 0, 0);
+	margin-top: 20px;
+	padding: 10px;
+	border-radius: 6px;
+	border: 1px solid rgb(153, 0, 0);
+	background: rgba(153, 0, 0, 0.2);
+}
+
+#Footer{
+	text-align: center;
+	padding: 10px;
+	background: rgba(255, 255, 255, 0.4);
+}
+
+@media (min-width: 451px) {
+	body{
+		overflow-y: hidden;
+	}
+
+	#Center{
+		position: absolute;
+	 	top: 42%;
+	 	left: 50%;
+	 	transform: translate(-50%, -50%);
+	}
+
+	#Footer {
+	  position: absolute;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
+	}
+}
+
+@media (max-width: 450px) {
+  	#Center {
+  		margin-top: 40px;
+    	padding-bottom: 40px;
+	 	padding-left: 20px;
+	 	padding-right: 20px;
+ 	}
+
+  	h1{
+		font-size: 48px;
+	}
+
+	input{
+		padding: 6px;
+	}
+
+	.weather-description{
+		font-size: 25px;
+	}
+
+	#Searchbar{
+		width: 95%;
+	}
+
+	#Weather-div img{
+		width: 40px;
+		height: 40px;
+	}
+
+	#Footer{
+		margin-top: 60px;
+	}
+}

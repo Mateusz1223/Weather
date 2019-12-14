@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html lang="pl-PL">
+<head>	
+	<title>Weather</title>
+	
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<meta name="keywords" content="weather" />
+	<meta name="author" content="Mateusz Piasecki">
+	
+	<link rel="icon" href="img/icon32.png" type="image/png" sizes="32x32">
+	<link rel="icon" href="img/icon16.png" type="image/png" sizes="16x16">
+
+	<link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+
+	<script type="text/javascript" src="script.js"></script>	
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="fontello/css/fontello.css" rel="stylesheet" type="text/css" /> 
+</head>
+
+<body style="background-image: url('img/clear_sky.jpg');">
+	<main>
+		<div id="Center">
+			<div id="Search-div">
+				<h1 class="">Weather</h1>
+
+				<div id="Searchbar">
+					<i class="icon-search-1" onclick="findCity('Search-1')"></i>
+					<input type="text" value="" id="Search-1" placeholder="Find city" onkeydown="enterPressed(event, 'Search-1')">
+				</div>
+				<div id="Search-1-alert" class="alert"  style="display: none">
+					City not found!
+				</div>
+			</div>
+
+			<div id="Weather-div" style="display: none">
+				<h1 id="CityName">London, Uk</h1><small id="Time">13:53</small>
+				<br />
+				<i class="icon-compass"></i><small id="Coordinates"></small>
+				<br />
+				<i class="icon-temperature"></i><p class="weather-description" id="Temperature"></p>
+				<br />
+				<img src="" id="WeatherImg" alt=""><p class="weather-description" id="Description"></p>
+				<br />
+				<i class="icon-wind"></i><p class="weather-description" id="Wind"></p>
+				<br />
+				<i class="icon-sunrise"></i><p class="weather-description" id="Sunrise-set"></p>
+
+				<div id="Searchbar">
+					<i class="icon-search-1" onclick="findCity('Search-2')"></i>
+					<input type="text" value="" id="Search-2" placeholder="Next city" onkeydown="enterPressed(event, 'Search-2')">
+				</div>
+				<div id="Search-2-alert" class="alert"  style="display: none">
+					City not found!
+				</div>
+			</div>
+		</div>
+	<main>
+
+	<footer>
+		<div id="Footer">
+			Created by Mateusz Piasecki
+		</div>
+	</footer>
+</body>
+</html>
