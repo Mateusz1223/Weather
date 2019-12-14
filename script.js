@@ -11,13 +11,17 @@ function findCity(inputId){
 		document.getElementById(inputId).value = "";
 
 		xmlhttp.onreadystatechange = function() {
-		if (this.readyState == 4 && this.status == 200) {
-			document.getElementById(inputId+"-alert").style = "display: none;"
-			var weatherResponse = JSON.parse(this.responseText);
-			writeWeather(weatherResponse);
-		}else  if(this.status == 404){
-			document.getElementById(inputId+"-alert").style = "display: block;"
-		}
+			if (this.readyState == 4 && this.status == 200) {
+				document.getElementById(inputId+"-alert").style = "display: none;"
+				var weatherResponse = JSON.parse(this.responseText);
+				writeWeather(weatherResponse);
+			}else if(this.status == 404){
+				document.getElementById(inputId+"-alert").innerHTML = "City not found!"
+				document.getElementById(inputId+"-alert").style = "display: block;"
+			}else{
+				document.getElementById(inputId+"-alert").innerHTML = "Something went wrong, try again later!"
+				document.getElementById(inputId+"-alert").style = "display: block;"
+			}
 		};
 
 		xmlhttp.open("GET", url, true);
