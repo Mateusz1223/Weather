@@ -7,7 +7,7 @@ function enterPressed(e, inputId){
 function findCity(inputId){
 	if(document.getElementById(inputId).value != ""){
 		var xmlhttp = new XMLHttpRequest();
-		var url = "http://api.openweathermap.org/data/2.5/weather?q="+document.getElementById(inputId).value+"&units=metric&APPID=a2724447315635ff1cd798e063ff7a58";
+		var url = "https://api.openweathermap.org/data/2.5/weather?q="+document.getElementById(inputId).value+"&units=metric&APPID=a2724447315635ff1cd798e063ff7a58";
 		document.getElementById(inputId).value = "";
 
 		xmlhttp.onreadystatechange = function() {
