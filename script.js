@@ -43,7 +43,7 @@ function writeWeather(weatherResponse){
 
 	document.getElementById("CityName").innerHTML = weatherResponse.name+", "+weatherResponse.sys.country;
 
-	document.getElementById("Time").innerHTML = getLocationTime(weatherResponse);
+	document.getElementById("Time").innerHTML = "&nbsp;&nbsp;"+getLocationTime(weatherResponse);
 
 	document.getElementById("Coordinates").innerHTML = getCoordinates(weatherResponse);
 
