@@ -18,7 +18,7 @@ function findCity(inputId){
 			}else if(this.status == 404){
 				document.getElementById(inputId+"-alert").innerHTML = "City not found!"
 				document.getElementById(inputId+"-alert").style = "display: block;"
-			}else{
+			}else if(this.status == 204 || this.status == 400 || this.status == 500 || this.status == 501 || this.status == 502 || this.status == 503){
 				document.getElementById(inputId+"-alert").innerHTML = "Something went wrong, try again later!"
 				document.getElementById(inputId+"-alert").style = "display: block;"
 			}
@@ -54,7 +54,9 @@ function writeWeather(weatherResponse){
 
 	document.getElementById("Wind").innerHTML = weatherResponse.wind.speed+" m/s";
 
-	document.getElementById("Sunrise-set").innerHTML = "Sunrise "+getSunriseTime(weatherResponse)+"<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sunset "+getSunsetTime(weatherResponse);
+	document.getElementById("Humidity").innerHTML = weatherResponse.main.humidity+" %";
+
+	document.getElementById("Sunrise-set").innerHTML = "Sunrise "+getSunriseTime(weatherResponse)+"<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sunset "+getSunsetTime(weatherResponse);
 }
 
 function setBackground(weatherResponse){

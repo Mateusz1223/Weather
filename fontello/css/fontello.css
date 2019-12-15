@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'fontello';
-  src: url('../font/fontello.eot?83480560');
-  src: url('../font/fontello.eot?83480560#iefix') format('embedded-opentype'),
-       url('../font/fontello.woff2?83480560') format('woff2'),
-       url('../font/fontello.woff?83480560') format('woff'),
-       url('../font/fontello.ttf?83480560') format('truetype'),
-       url('../font/fontello.svg?83480560#fontello') format('svg');
+  src: url('../font/fontello.eot?20169602');
+  src: url('../font/fontello.eot?20169602#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?20169602') format('woff2'),
+       url('../font/fontello.woff?20169602') format('woff'),
+       url('../font/fontello.ttf?20169602') format('truetype'),
+       url('../font/fontello.svg?20169602#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?83480560#fontello') format('svg');
+    src: url('../font/fontello.svg?20169602#fontello') format('svg');
   }
 }
 */
@@ -55,59 +55,18 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
-.icon-fahrenheit:before { content: '\e801'; } /* '' */
-.icon-wind:before { content: '\e802'; font-size: 40px; margin-left: -5px; margin-top: 20px;} /* '' */
-.icon-moon-inv:before { content: '\e803'; } /* '' */
-.icon-moon:before { content: '\e804'; } /* '' */
-.icon-sun:before { content: '\e805'; } /* '' */
-.icon-rain:before { content: '\e806'; } /* '' */
-.icon-rain-inv:before { content: '\e807'; } /* '' */
-.icon-temperature:before { content: '\e808'; font-size: 40px; margin-left: -7px; margin-top: 40px;} /* '' */
-.icon-celcius:before { content: '\e809';} /* '' */
-.icon-sun-inv:before { content: '\e80a'; } /* '' */
-.icon-cloud-sun-inv:before { content: '\e80b'; } /* '' */
-.icon-cloud-sun:before { content: '\e80c'; } /* '' */
-.icon-cloud-moon:before { content: '\e80d'; } /* '' */
-.icon-cloud-moon-inv:before { content: '\e80e'; } /* '' */
-.icon-cloud-inv:before { content: '\e80f'; } /* '' */
-.icon-cloud:before { content: '\e810'; } /* '' */
-.icon-windy-rain-inv:before { content: '\e811'; } /* '' */
-.icon-snow-inv:before { content: '\e812'; } /* '' */
-.icon-snow-heavy-inv:before { content: '\e813'; } /* '' */
-.icon-hail-inv:before { content: '\e814'; } /* '' */
-.icon-clouds-inv:before { content: '\e815'; } /* '' */
-.icon-clouds-flash-inv:before { content: '\e816'; } /* '' */
-.icon-compass:before { content: '\e817'; font-size: 22px;} /* '' */
-.icon-na:before { content: '\e818'; } /* '' */
-.icon-clouds-flash-alt:before { content: '\e819'; } /* '' */
-.icon-cloud-flash-inv:before { content: '\e81a'; } /* '' */
-.icon-drizzle-inv:before { content: '\e81b'; } /* '' */
-.icon-sunrise:before { content: '\e81c'; font-size: 40px; margin-left: -8px; margin-top: 20px;} /* '' */
-.icon-eclipse:before { content: '\e81d'; } /* '' */
-.icon-mist:before { content: '\e81e'; } /* '' */
-.icon-windy-inv:before { content: '\e81f'; } /* '' */
-.icon-snowflake:before { content: '\e820'; } /* '' */
-.icon-fog-sun:before { content: '\e821'; } /* '' */
-.icon-fog-moon:before { content: '\e822'; } /* '' */
-.icon-fog-cloud:before { content: '\e823'; } /* '' */
-.icon-fog:before { content: '\e824'; } /* '' */
-.icon-cloud-flash:before { content: '\e825'; } /* '' */
-.icon-cloud-flash-alt:before { content: '\e826'; } /* '' */
-.icon-drizzle:before { content: '\e827'; } /* '' */
-.icon-windy:before { content: '\e828'; } /* '' */
-.icon-windy-rain:before { content: '\e829'; } /* '' */
-.icon-snow:before { content: '\e82a'; } /* '' */
-.icon-snow-alt:before { content: '\e82b'; } /* '' */
-.icon-snow-heavy:before { content: '\e82c'; } /* '' */
-.icon-clouds:before { content: '\e82d'; } /* '' */
-.icon-clouds-flash:before { content: '\e82e'; } /* '' */
-.icon-hail:before { content: '\e82f'; } /* '' */
-.icon-search-1:before { content: '\e830'; font-size: 30px;} /* '' */
+.icon-temperature:before { content: '\e800'; font-size: 40px; margin-left: -7px; margin-top: 40px; } /* '' */
+.icon-compass:before { content: '\e801'; font-size: 22px; } /* '' */
+.icon-wind:before { content: '\e802'; font-size: 40px; margin-left: -5px; margin-top: 20px; } /* '' */
+.icon-sunrise:before { content: '\e803'; font-size: 40px; margin-left: -4px; margin-top: 20px; } /* '' */
+.icon-search:before { content: '\e804'; font-size: 30px;} /* '' */
+.icon-water:before { content: '\e805'; font-size: 30px; margin-left: 0px; margin-right: 15px; margin-top: 20px; } /* '' */
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .icon-wind:before { font-size: 30px; margin-left: -5px; margin-top: 20px;} /* '' */
-  .icon-temperature:before { font-size: 30px; margin-left: -7px; margin-top: 30px;} /* '' */
-  .icon-sunrise:before { font-size: 30px; margin-left: -8px; margin-top: 15px;} /* '' */
-  .icon-search-1:before { font-size: 25px;}
+  .icon-temperature:before { font-size: 30px; margin-top: 30px;} /* '' */
+  .icon-sunrise:before { font-size: 30px; margin-top: 15px;} /* '' */
+  .icon-search:before { font-size: 25px;}
   .icon-compass:before { font-size: 18px;}
+  .icon-water:before { font-size: 20px; }
 }
